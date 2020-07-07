@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&family=Roboto&display=swap" rel="stylesheet">
+  <link href="cart.css" rel="stylesheet">
+  <title>My Cart</title>
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <div class="navbar-fixed">
+		<nav class="navbar">
+			<div class="nav-wrapper">
+			   	<a href="#" id="logo" class="brand-logo orange-text">FROOD</a>
+			   	 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+			   	<ul id="nav-mobile" class="right hide-on-med-and-down">
+			   		<li><a href="#">My Profile</a></li>
+                    <li><a href="#">Sign Out</a></li>
+			     </ul>
+		    </div>
+		</nav>
+	</div>
+
+    <ul class="sidenav" id="mobile-demo">
+		<li><a href="#">My Profile</a></li>
+		<li><a href="#">Sign Out</a></li>
+    </ul>
+    <!--Navigation end-->
+  <main>
+    <div class="basket">
+      <div class="basket-module">
+        <h1 id="mycart">My Cart</h1>
+      </div>
+      <div class="basket-labels">
+        <ul>
+          <li class="item item-heading">Item</li>
+          <li class="price">Price</li>
+          <li class="quantity">Quantity</li>
+          <li class="subtotal">Subtotal</li>
+        </ul>
+      </div>
+      <div id="all-products">
+        <!--All products come here-->
+     </div>
+    </div>
+    <aside>
+      <div class="summary">
+        <div class="summary-total-items"><span class="total-items"></span> Items in your Cart</div>
+        <div class="summary-subtotal">
+          <div class="subtotal-title">Subtotal</div>
+          <div class="subtotal-value final-value" id="basket-subtotal">130.00</div>
+          <div class="summary-promo hide">
+            <div class="promo-title">Promotion</div>
+            <div class="promo-value final-value" id="basket-promo"></div>
+          </div>
+        </div>
+        <div class="summary-total">
+          <div class="total-title">Total</div>
+          <div class="total-value final-value" id="basket-total">130.00</div>
+        </div>
+        <div class="summary-checkout">
+          <button class="checkout-cta">Go to Secure Checkout</button>
+          <br>
+          <spna style="text-align: center; display: block;"><a href="#" id="shop-more">Continue Shopping</a></spna>
+        </div>
+      </div>
+    </aside>
+  </main>
+  <!--jquery script-->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script src="cart.js"></script>
+</body>
+
+</html>
